@@ -1,0 +1,42 @@
+﻿@model WebAppLuisMendozaSamuel.Models.Entidades.Alumno;
+
+@{
+    ViewData["Title"] = "Entrenamiento";
+}
+
+<div class="container">
+
+    <br>
+    <br>
+    <h4 class="header center black-text">@ViewBag.enunciado</h4>
+    <div class="row center">
+        <h3 class="header col s12 light">@ViewBag.ejercicio</h3>
+        @{ var start = new TimeSpan(DateTime.Now.Ticks);}
+
+        <label>Respuesta</label>
+        <input id="txtrespuesta" type="text" name="respuesta_alumno" />
+        <br />
+
+        @Html.ActionLink("Enviar respuesta", "Resultado",
+       new {
+           start.Seconds,
+           stop = new TimeSpan(DateTime.Now.Ticks).Seconds,
+           IdAlumno = Model.IdAlumno,
+           RespuestaCorrecta = ViewBag.respuesta,
+           RespuestaAlumno = "xxx",
+           correo = Model.Correo},
+       new { @class = "link" })
+
+        <script>
+            $(function () {
+                $('.link').click(function () {
+                    var RespuestaAlumno = $("#txtrespuesta").val();
+                    this.href = this.href.replace("xxx", RespuestaAlumno);
+                });
+            });
+        </script>
+    </div>
+
+    <br>
+
+</div>
