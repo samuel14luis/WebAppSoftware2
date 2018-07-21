@@ -26,7 +26,7 @@ namespace WebAppLuisMendozaSamuel.Controllers
         [HttpPost, Authorize]
         public IActionResult Create(Cliente cliente)
         {
-            cliente.id = 0;
+            cliente.idCliente = 0;
             var da = new ClienteDA();
             if (da.InsertarCliente(cliente) > 0)
             {
@@ -75,7 +75,7 @@ namespace WebAppLuisMendozaSamuel.Controllers
         public IActionResult Delete(Cliente cliente)
         {
             var da = new ClienteDA();
-            if (da.EliminarCliente(cliente.id)){
+            if (da.EliminarCliente(cliente.idCliente)){
                 return RedirectToAction("index");
             }
             else

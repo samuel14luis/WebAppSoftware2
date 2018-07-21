@@ -14,7 +14,7 @@ namespace WebAppLuisMendozaSamuel.Data.DataAccess
             var listado = new List<Compra>();
             using (var db = new ApplicationDbContext())
             {
-                listado = db.Compra.Include(item => item.Producto).ToList();
+                listado = db.Compra.Include(item => item.Cliente).Include(item => item.Producto).ToList();
             }
             return listado;
         }
@@ -25,7 +25,7 @@ namespace WebAppLuisMendozaSamuel.Data.DataAccess
             {
                 db.Add(Compra);
                 db.SaveChanges();
-                result = Compra.id;
+                result = Compra.idCompra;
 
             }
             return result;
@@ -35,7 +35,7 @@ namespace WebAppLuisMendozaSamuel.Data.DataAccess
             var result = new Compra();
             using (var db = new ApplicationDbContext())
             {
-                result = db.Compra.Where(item => item.id == id).FirstOrDefault();
+                result = db.Compra.Where(item => item.idCompra == id).FirstOrDefault();
             }
             return result;
         }
@@ -57,7 +57,7 @@ namespace WebAppLuisMendozaSamuel.Data.DataAccess
             var result = false;
             using (var db = new ApplicationDbContext())
             {
-                var Compra = new Compra() { id = id };
+                var Compra = new Compra() { idCompra = id };
                 db.Compra.Attach(Compra);
                 db.Compra.Remove(Compra);
                 result = db.SaveChanges() != 0;

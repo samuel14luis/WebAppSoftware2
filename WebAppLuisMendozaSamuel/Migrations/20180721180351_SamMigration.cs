@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace WebAppLuisMendozaSamuel.Migrations
 {
-    public partial class MigracionBD : Migration
+    public partial class SamMigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -52,14 +52,14 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 name: "Cliente",
                 columns: table => new
                 {
-                    id = table.Column<int>(nullable: false)
+                    idCliente = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     edad = table.Column<int>(nullable: false),
                     nombre = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Cliente", x => x.id);
+                    table.PrimaryKey("PK_Cliente", x => x.idCliente);
                 });
 
             migrationBuilder.CreateTable(
@@ -187,9 +187,8 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 name: "Compra",
                 columns: table => new
                 {
-                    id = table.Column<int>(nullable: false)
+                    idCompra = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Clienteid = table.Column<int>(nullable: true),
                     cantidad = table.Column<int>(nullable: false),
                     idCliente = table.Column<int>(nullable: false),
                     idProducto = table.Column<int>(nullable: false),
@@ -197,13 +196,13 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Compra", x => x.id);
+                    table.PrimaryKey("PK_Compra", x => x.idCompra);
                     table.ForeignKey(
-                        name: "FK_Compra_Cliente_Clienteid",
-                        column: x => x.Clienteid,
+                        name: "FK_Compra_Cliente_idCliente",
+                        column: x => x.idCliente,
                         principalTable: "Cliente",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "idCliente",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Compra_Producto_idProducto",
                         column: x => x.idProducto,
@@ -252,9 +251,9 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Compra_Clienteid",
+                name: "IX_Compra_idCliente",
                 table: "Compra",
-                column: "Clienteid");
+                column: "idCliente");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Compra_idProducto",

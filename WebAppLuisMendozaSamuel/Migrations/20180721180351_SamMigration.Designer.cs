@@ -11,8 +11,8 @@ using WebAppLuisMendozaSamuel.Data;
 namespace WebAppLuisMendozaSamuel.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180719012202_MigracionBD")]
-    partial class MigracionBD
+    [Migration("20180721180351_SamMigration")]
+    partial class SamMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -182,7 +182,7 @@ namespace WebAppLuisMendozaSamuel.Migrations
 
             modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Cliente", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("idCliente")
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("edad");
@@ -190,17 +190,15 @@ namespace WebAppLuisMendozaSamuel.Migrations
                     b.Property<string>("nombre")
                         .IsRequired();
 
-                    b.HasKey("id");
+                    b.HasKey("idCliente");
 
                     b.ToTable("Cliente");
                 });
 
             modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Compra", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("idCompra")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<int?>("Clienteid");
 
                     b.Property<int>("cantidad");
 
@@ -210,9 +208,9 @@ namespace WebAppLuisMendozaSamuel.Migrations
 
                     b.Property<decimal>("precioTotal");
 
-                    b.HasKey("id");
+                    b.HasKey("idCompra");
 
-                    b.HasIndex("Clienteid");
+                    b.HasIndex("idCliente");
 
                     b.HasIndex("idProducto");
 
@@ -285,7 +283,8 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 {
                     b.HasOne("WebAppLuisMendozaSamuel.Models.Entidades.Cliente", "Cliente")
                         .WithMany("Compras")
-                        .HasForeignKey("Clienteid");
+                        .HasForeignKey("idCliente")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("WebAppLuisMendozaSamuel.Models.Entidades.Producto", "Producto")
                         .WithMany("Compras")

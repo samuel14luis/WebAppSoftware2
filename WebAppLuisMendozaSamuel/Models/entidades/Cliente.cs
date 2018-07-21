@@ -9,7 +9,7 @@ namespace WebAppLuisMendozaSamuel.Models.Entidades
     public class Cliente
     {
         [Key]
-        public int id { get; set; }
+        public int idCliente { get; set; }
         [Required]
         public string nombre { get; set; }
         [Required]

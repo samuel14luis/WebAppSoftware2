@@ -9,7 +9,7 @@ namespace WebAppLuisMendozaSamuel.Models.Entidades
     public class Compra
     {
         [Key]
-        public int id { get; set; }
+        public int idCompra { get; set; }
         [Required]
         public int idProducto { get; set; }
         [Required]

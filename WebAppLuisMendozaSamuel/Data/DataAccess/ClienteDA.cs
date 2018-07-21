@@ -25,7 +25,7 @@ namespace WebAppLuisMendozaSamuel.Data.DataAccess
             {
                 db.Add(Cliente);
                 db.SaveChanges();
-                result = Cliente.id;
+                result = Cliente.idCliente;
 
             }
             return result;
@@ -35,7 +35,7 @@ namespace WebAppLuisMendozaSamuel.Data.DataAccess
             var result = new Cliente();
             using (var db = new ApplicationDbContext())
             {
-                result = db.Cliente.Where(item => item.id == id).FirstOrDefault();
+                result = db.Cliente.Where(item => item.idCliente == id).FirstOrDefault();
             }
             return result;
         }
@@ -57,7 +57,7 @@ namespace WebAppLuisMendozaSamuel.Data.DataAccess
             var result = false;
             using (var db = new ApplicationDbContext())
             {
-                var Cliente = new Cliente() { id = id };
+                var Cliente = new Cliente() { idCliente = id };
                 db.Cliente.Attach(Cliente);
                 db.Cliente.Remove(Cliente);
                 result = db.SaveChanges() != 0;

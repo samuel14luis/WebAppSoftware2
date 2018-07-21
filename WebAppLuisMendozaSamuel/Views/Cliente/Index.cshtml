@@ -7,26 +7,42 @@
 
 <h5><a asp-action="Create"><i class="material-icons">add_circle</i> Agregar un nuevo cliente</a></h5>
 
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>Id</th>
-            <th>Nombre del cliente</th>
-            <th>Edad</th>
-            <th>Opciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.id</td>
-                <td>@item.nombre</td>
-                <td>@item.edad</td>
-                <td>
-                    @Html.ActionLink("Editar", "Edit", new { id = item.id }) | @Html.ActionLink("Detalles", "Details", new { id = item.id }) | @Html.ActionLink("Eliminar","Delete", new { id = item.id })
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<br />
+
+<ul class="collapsible">
+    @foreach (var item in Model)
+    {
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">person_pin</i>
+                @item.nombre
+                <span class="new badge" data-badge-caption=" ">@item.idCliente</span>
+            </div>
+            <div class="collapsible-body">
+                <p>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            Nombre
+                        </dt>
+                        <dd>
+                            @item.nombre
+                        </dd>
+                        <dt>
+                            Edad
+                        </dt>
+                        <dd>
+                            @item.edad
+                        </dd>
+                        <dt>
+                            Opciones
+                        </dt>
+                        <dd>
+                            @Html.ActionLink("Editar", "Edit", new { id = item.idCliente }) | @Html.ActionLink("Detalles", "Details", new { id = item.idCliente }) | @Html.ActionLink("Eliminar", "Delete", new { id = item.idCliente })
+                        </dd>
+                    </dl>
+                </p>
+            </div>
+        </li>
+    }
+</ul>
+<br />

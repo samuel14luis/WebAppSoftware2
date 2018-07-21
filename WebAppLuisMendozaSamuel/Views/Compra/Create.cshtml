@@ -20,7 +20,7 @@
             </div>
             <div class="form-group">
                 <label class="control-label">Cliente</label>
-                <select asp-for="idCliente" class="form-control" asp-items="@(new SelectList(ViewBag.clientes,"id","nombre"))"></select>
+                <select asp-for="idCliente" class="form-control" asp-items="@(new SelectList(ViewBag.clientes,"idCliente","nombre"))"></select>
             </div>
             
             <div class="input-field">
