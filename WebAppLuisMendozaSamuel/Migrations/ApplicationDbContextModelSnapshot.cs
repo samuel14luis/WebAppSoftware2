@@ -179,35 +179,60 @@ namespace WebAppLuisMendozaSamuel.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
-            modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Alumno", b =>
+            modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Cliente", b =>
                 {
-                    b.Property<int>("IdAlumno")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Correo")
+                    b.Property<int>("edad");
+
+                    b.Property<string>("nombre")
                         .IsRequired();
 
-                    b.HasKey("IdAlumno");
+                    b.HasKey("id");
 
-                    b.ToTable("Alumno");
+                    b.ToTable("Cliente");
                 });
 
-            modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Intento", b =>
+            modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Compra", b =>
                 {
-                    b.Property<int>("IdIntento")
+                    b.Property<int>("id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("IdAlumno");
+                    b.Property<int?>("Clienteid");
 
-                    b.Property<decimal>("Tiempo");
+                    b.Property<int>("cantidad");
 
-                    b.Property<decimal>("puntaje");
+                    b.Property<int>("idCliente");
 
-                    b.HasKey("IdIntento");
+                    b.Property<int>("idProducto");
 
-                    b.HasIndex("IdAlumno");
+                    b.Property<decimal>("precioTotal");
 
-                    b.ToTable("Intento");
+                    b.HasKey("id");
+
+                    b.HasIndex("Clienteid");
+
+                    b.HasIndex("idProducto");
+
+                    b.ToTable("Compra");
+                });
+
+            modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Producto", b =>
+                {
+                    b.Property<int>("idProducto")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("nombre")
+                        .IsRequired();
+
+                    b.Property<decimal>("precioUnitario");
+
+                    b.Property<int>("stock");
+
+                    b.HasKey("idProducto");
+
+                    b.ToTable("Producto");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -255,11 +280,15 @@ namespace WebAppLuisMendozaSamuel.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Intento", b =>
+            modelBuilder.Entity("WebAppLuisMendozaSamuel.Models.Entidades.Compra", b =>
                 {
-                    b.HasOne("WebAppLuisMendozaSamuel.Models.Entidades.Alumno", "Alumno")
-                        .WithMany("Intentos")
-                        .HasForeignKey("IdAlumno")
+                    b.HasOne("WebAppLuisMendozaSamuel.Models.Entidades.Cliente", "Cliente")
+                        .WithMany("Compras")
+                        .HasForeignKey("Clienteid");
+
+                    b.HasOne("WebAppLuisMendozaSamuel.Models.Entidades.Producto", "Producto")
+                        .WithMany("Compras")
+                        .HasForeignKey("idProducto")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <Content Include="Controllers\AccountController.cs" />
-    <Content Include="Controllers\AlumnoController.cs" />
     <Content Include="Controllers\HomeController.cs" />
     <Content Include="Controllers\ManageController.cs" />
   </ItemGroup>

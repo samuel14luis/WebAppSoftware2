@@ -1,0 +1,36 @@
+﻿@model WebAppLuisMendozaSamuel.Models.Entidades.Producto
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<br /><br /><br />
+
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.stock)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.stock) unidades
+        </dd>
+        <dt>
+            Precio unitario
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.precioUnitario) soles
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idProducto">Editar</a> |
+    <a asp-action="Index">Volver</a>
+</div>

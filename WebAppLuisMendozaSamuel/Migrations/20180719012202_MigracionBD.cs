@@ -5,23 +5,10 @@ using System.Collections.Generic;
 
 namespace WebAppLuisMendozaSamuel.Migrations
 {
-    public partial class ScriptBDSamuel : Migration
+    public partial class MigracionBD : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.CreateTable(
-                name: "Alumno",
-                columns: table => new
-                {
-                    IdAlumno = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Correo = table.Column<string>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Alumno", x => x.IdAlumno);
-                });
-
             migrationBuilder.CreateTable(
                 name: "AspNetRoles",
                 columns: table => new
@@ -62,24 +49,32 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Intento",
+                name: "Cliente",
                 columns: table => new
                 {
-                    IdIntento = table.Column<int>(nullable: false)
+                    id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    IdAlumno = table.Column<int>(nullable: false),
-                    Tiempo = table.Column<decimal>(nullable: false),
-                    puntaje = table.Column<decimal>(nullable: false)
+                    edad = table.Column<int>(nullable: false),
+                    nombre = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Intento", x => x.IdIntento);
-                    table.ForeignKey(
-                        name: "FK_Intento_Alumno_IdAlumno",
-                        column: x => x.IdAlumno,
-                        principalTable: "Alumno",
-                        principalColumn: "IdAlumno",
-                        onDelete: ReferentialAction.Cascade);
+                    table.PrimaryKey("PK_Cliente", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Producto",
+                columns: table => new
+                {
+                    idProducto = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    nombre = table.Column<string>(nullable: false),
+                    precioUnitario = table.Column<decimal>(nullable: false),
+                    stock = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Producto", x => x.idProducto);
                 });
 
             migrationBuilder.CreateTable(
@@ -188,6 +183,35 @@ namespace WebAppLuisMendozaSamuel.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Compra",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Clienteid = table.Column<int>(nullable: true),
+                    cantidad = table.Column<int>(nullable: false),
+                    idCliente = table.Column<int>(nullable: false),
+                    idProducto = table.Column<int>(nullable: false),
+                    precioTotal = table.Column<decimal>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Compra", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_Compra_Cliente_Clienteid",
+                        column: x => x.Clienteid,
+                        principalTable: "Cliente",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Compra_Producto_idProducto",
+                        column: x => x.idProducto,
+                        principalTable: "Producto",
+                        principalColumn: "idProducto",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -228,9 +252,14 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Intento_IdAlumno",
-                table: "Intento",
-                column: "IdAlumno");
+                name: "IX_Compra_Clienteid",
+                table: "Compra",
+                column: "Clienteid");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Compra_idProducto",
+                table: "Compra",
+                column: "idProducto");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -251,7 +280,7 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Intento");
+                name: "Compra");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
@@ -260,7 +289,10 @@ namespace WebAppLuisMendozaSamuel.Migrations
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Alumno");
+                name: "Cliente");
+
+            migrationBuilder.DropTable(
+                name: "Producto");
         }
     }
 }

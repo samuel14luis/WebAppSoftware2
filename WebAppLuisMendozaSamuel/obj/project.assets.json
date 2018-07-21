@@ -13265,11 +13265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Proyecto Software 2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
+      "projectUniqueName": "H:\\Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
       "projectName": "WebAppLuisMendozaSamuel",
-      "projectPath": "H:\\Proyecto Software 2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
+      "projectPath": "H:\\Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
       "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "H:\\Proyecto Software 2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel\\obj\\",
+      "outputPath": "H:\\Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

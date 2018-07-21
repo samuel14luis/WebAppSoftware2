@@ -1,0 +1,30 @@
+﻿@model WebAppLuisMendozaSamuel.Models.Entidades.Cliente
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<br /><br /><br />
+
+<div>
+    <h4>Detalles del cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.edad)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.edad)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Editar</a> |
+    <a asp-action="Index">Volver</a>
+</div>

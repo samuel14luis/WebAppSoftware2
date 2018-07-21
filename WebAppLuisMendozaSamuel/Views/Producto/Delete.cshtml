@@ -1,0 +1,39 @@
+﻿@model WebAppLuisMendozaSamuel.Models.Entidades.Producto
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<br /><br /><br />
+
+<h5>Estás seguro que deseas eliminar el siguiente producto?</h5>
+<div>
+    <h4>Producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.stock)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.stock)
+        </dd>
+        <dt>
+            Precio Unitario
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.precioUnitario)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="idProducto" />
+        <input type="submit" value="Eliminar" class="btn btn-default" /> |
+        <a asp-action="Index"><i class="material-icons">keyboard_arrow_left</i> Volver</a>
+    </form>
+</div>

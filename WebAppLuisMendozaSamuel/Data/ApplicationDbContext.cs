@@ -25,8 +25,12 @@ namespace WebAppLuisMendozaSamuel.Data
             // For example, you can rename the ASP.NET Identity table names and more.
             // Add your customizations after calling base.OnModelCreating(builder);
         }
-        public virtual DbSet<Intento> Intento { get; set; }
-        public virtual DbSet<Alumno> Alumno { get; set; }
+
+        public virtual DbSet<Compra> Compra { get; set; }
+        public virtual DbSet<Producto> Producto { get; set; }
+        public virtual DbSet<Cliente> Cliente { get; set; }
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(

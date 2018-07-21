@@ -1,0 +1,40 @@
+﻿@model WebAppLuisMendozaSamuel.Models.Entidades.Producto
+
+@{
+    ViewData["Title"] = "Nuevo producto";
+}
+
+<h2 class="header center black-text">Agregar un nuevo Producto</h2>
+
+<h4>Producto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="input-field">
+                <label asp-for="nombre" id="nombre" class="control-label"></label>
+                <input asp-for="nombre" for="nombre" class="form-control" />
+                <span asp-validation-for="nombre" class="text-danger"></span>
+            </div>
+            <div class="input-field">
+                <label asp-for="stock" id="stock" class="control-label"></label>
+                <input asp-for="stock" for="stock" class="form-control" />
+                <span asp-validation-for="stock" class="text-danger"></span>
+            </div>
+            <div class="input-field">
+                <label asp-for="precioUnitario" id="precioUnitario" class="control-label"></label>
+                <input asp-for="precioUnitario" for="precioUnitario" class="form-control" />
+                <span asp-validation-for="precioUnitario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input class="btn-large waves-effect waves-white btn" type="submit" value="Agregar"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Regresar a la lista de productos</a>
+</div>
+
