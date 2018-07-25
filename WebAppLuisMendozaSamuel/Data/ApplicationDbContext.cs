@@ -34,7 +34,7 @@ namespace WebAppLuisMendozaSamuel.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                "Server=DESKTOP-TAR0VRD;" +
+                "Server=DESKTOP-QC90R10;" +
                 "Database=DBProyectoSamuelLM;" +
                 "Trusted_Connection=true;" +
                 "MultipleActiveResultSets=true");

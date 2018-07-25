@@ -1,0 +1,23 @@
+[33mcommit a19cc8c451ebf0cc969936f98b53e4a0741c6bd0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: samuel14luis <luismendoza.samuel@gmail.com>
+Date:   Sat Jul 21 13:41:50 2018 -0500
+
+    interfaz materialize, funcionando
+
+[33mcommit 3ae444f702d817f262cda3e7b9801b9769c96e9c[m
+Author: samuel14luis <luismendoza.samuel@gmail.com>
+Date:   Fri Jul 20 22:39:16 2018 -0500
+
+    última versión medianamente estable, falta arreglar bugs al mostrar comrpas
+
+[33mcommit 75130ffdcd5b38a85feb72093182f90129d38832[m
+Author: samuel14luis <luismendoza.samuel@gmail.com>
+Date:   Sun Jul 15 11:31:25 2018 -0500
+
+    Commit Inicial
+
+[33mcommit 96056c8504da7b1d98d8d868d1619276d26c6b20[m
+Author: Sam <luismendoza.samuel@gmail.com>
+Date:   Sun Jul 15 11:28:04 2018 -0500
+
+    Initial commit

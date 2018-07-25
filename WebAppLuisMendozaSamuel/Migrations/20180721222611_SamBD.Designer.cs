@@ -11,8 +11,8 @@ using WebAppLuisMendozaSamuel.Data;
 namespace WebAppLuisMendozaSamuel.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180721180351_SamMigration")]
-    partial class SamMigration
+    [Migration("20180721222611_SamBD")]
+    partial class SamBD
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

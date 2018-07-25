@@ -22,3 +22,15 @@ H:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcore
 H:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.runtimeconfig.dev.json
 H:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
 H:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.deps.json
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.runtimeconfig.json
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.runtimeconfig.dev.json
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csprojAssemblyReference.cache
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csproj.CoreCompileInputs.cache
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.AssemblyInfoInputs.cache
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.AssemblyInfo.cs
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
+F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb

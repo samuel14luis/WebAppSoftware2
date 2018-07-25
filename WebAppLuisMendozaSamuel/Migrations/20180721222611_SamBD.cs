@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace WebAppLuisMendozaSamuel.Migrations
 {
-    public partial class SamMigration : Migration
+    public partial class SamBD : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
