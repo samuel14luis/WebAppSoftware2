@@ -5,7 +5,9 @@
 
 <h2 class="head center black-text">Lista de compras</h2>
 
+
 <h5><a asp-action="Create"><i class="material-icons">add_circle</i> Agregar una nueva compra</a></h5>
+<h5><a href="http://desktop-tar0vrd/ReportServer/Pages/ReportViewer.aspx?%2fReporteVentas%2fReporte1&rs:Command=Render"><i class="material-icons">assignment</i> Ver reportes de compras</a></h5>
 
 <table class="table table-hover responsive-table">
     <thead>
@@ -19,11 +21,11 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var item in Model)
+        @foreach (var item in Model)
         {
             <tr>
                 <td>@item.idCompra</td>
-                <td>@item.idCliente</td>
+                <td>@item.Cliente.nombre</td>
                 <td>@item.Producto.nombre</td>
                 <td>@item.cantidad</td>
                 <td>@item.precioTotal</td>

@@ -34,3 +34,41 @@ F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcore
 F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.AssemblyInfo.cs
 F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
 F:\Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.deps.json
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.runtimeconfig.json
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.runtimeconfig.dev.json
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\en-US\WebAppLuisMendozaSamuel.resources.dll
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\es-PE\WebAppLuisMendozaSamuel.resources.dll
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csprojAssemblyReference.cache
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.Resource.Views.Shared._Layout.en-US.resources
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.Resource.Views.Shared._Layout.es-PE.resources
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csproj.GenerateResource.cache
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csproj.CoreCompileInputs.cache
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.AssemblyInfoInputs.cache
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.AssemblyInfo.cs
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\en-US\WebAppLuisMendozaSamuel.resources.dll
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\es-PE\WebAppLuisMendozaSamuel.resources.dll
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
+H:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.deps.json
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.runtimeconfig.json
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.runtimeconfig.dev.json
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\en-US\WebAppLuisMendozaSamuel.resources.dll
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\bin\Debug\netcoreapp2.0\es-PE\WebAppLuisMendozaSamuel.resources.dll
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csprojAssemblyReference.cache
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.Resource.Views.Shared._Layout.en-US.resources
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.Resource.Views.Shared._Layout.es-PE.resources
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csproj.GenerateResource.cache
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.csproj.CoreCompileInputs.cache
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.AssemblyInfoInputs.cache
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.AssemblyInfo.cs
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\en-US\WebAppLuisMendozaSamuel.resources.dll
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\es-PE\WebAppLuisMendozaSamuel.resources.dll
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.dll
+F:\AA Proyecto Software 2\WebAppSoftware2\WebAppLuisMendozaSamuel\obj\Debug\netcoreapp2.0\WebAppLuisMendozaSamuel.pdb

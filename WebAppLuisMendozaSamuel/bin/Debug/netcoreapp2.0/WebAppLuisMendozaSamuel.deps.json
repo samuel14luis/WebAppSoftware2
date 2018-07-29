@@ -31,6 +31,14 @@
         "runtime": {
           "WebAppLuisMendozaSamuel.dll": {}
         },
+        "resources": {
+          "en-US/WebAppLuisMendozaSamuel.resources.dll": {
+            "locale": "en-US"
+          },
+          "es-PE/WebAppLuisMendozaSamuel.resources.dll": {
+            "locale": "es-PE"
+          }
+        },
         "compile": {
           "WebAppLuisMendozaSamuel.dll": {}
         }

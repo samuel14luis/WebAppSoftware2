@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Razor";
+
+}
+<br>
+@{
+
+    var variable = "Aplicacion ASP.NET Core MVC con Razor";
+}
+<h3 class="alert-warning">@variable</h3>
+<br>
+@{
+
+    var Estado = true;
+    <p> Elemento de la vista, de programacion en C# @Estado</p>
+}
+<br>
+
+@{
+    string Titulo = "Fecha Actual";
+    int dia = DateTime.Now.Day;
+    int mes = DateTime.Now.Month;
+    int año = DateTime.Now.Year;
+    string cadena;
+    if (dia > 15)
+    {
+
+        cadena = "Estamos en la segunda mitad del mes";
+    }
+    else
+    {
+
+        cadena = "Estamos en la primera mitad del mes";
+    }
+
+}
+<div>
+    <h2 class="alert-warning">@Titulo:@dia/@mes/@año</h2>
+    <br>
+    <p>@cadena</p>
+</div>

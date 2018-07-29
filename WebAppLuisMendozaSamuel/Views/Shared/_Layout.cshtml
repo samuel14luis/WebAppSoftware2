@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer Localizer
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -34,16 +37,19 @@
                 </button>
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Tienda</a>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
-                    <li><a asp-area="" asp-controller="Producto" asp-action="Index">Productos</a></li>
-                    <li><a asp-area="" asp-controller="Cliente" asp-action="Index">Clientes</a></li>
-                    <li><a asp-area="" asp-controller="Compra" asp-action="Index">Compras</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">Acerca de</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contacto</a></li>
+            <div class="navbar-collapse collapse row">
+                <ul class="nav navbar-nav col s5">
+                    <li><a asp-area="" asp-controller="Producto" asp-action="Index">@Localizer["kListaProducto"]</a></li>
+                    <li><a asp-area="" asp-controller="Cliente" asp-action="Index">@Localizer["kListaCliente"]</a></li>
+                    <li><a asp-area="" asp-controller="Compra" asp-action="Index">@Localizer["kListaCompra"]</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Razor">@Localizer["kRazor"]</a></li>
                 </ul>
-                @await Html.PartialAsync("_LoginPartial")
+
+
+                @await Component.InvokeAsync("Idioma")
+                <div class="col s4">
+                    @await Html.PartialAsync("_LoginPartial")
+                </div>
             </div>
         </div>
     </nav>
@@ -81,5 +87,12 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+
+    <script>
+
+        $(document).ready(function () {
+            $('#idiomas').formSelect();
+        });
+    </script>
 </body>
 </html>

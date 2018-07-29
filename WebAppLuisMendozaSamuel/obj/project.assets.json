@@ -13259,23 +13259,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JPrincipe\\.nuget\\packages\\": {},
+    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
+      "projectUniqueName": "H:\\AA Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
       "projectName": "WebAppLuisMendozaSamuel",
-      "projectPath": "F:\\Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
-      "packagesPath": "C:\\Users\\JPrincipe\\.nuget\\packages\\",
-      "outputPath": "F:\\Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\obj\\",
+      "projectPath": "H:\\AA Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\WebAppLuisMendozaSamuel.csproj",
+      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
+      "outputPath": "H:\\AA Proyecto Software 2\\WebAppSoftware2\\WebAppLuisMendozaSamuel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\JPrincipe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
